@@ -17,10 +17,10 @@ GET https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=2762fe12&
 GET https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=2762fe12&app_key=9a0f0246c250ede5b70c49d6ee4d1116&field=label
 
 ###Returns All Plant info:
-GET http://localhost:8080/
+GET https://seed-and-feed-backend.herokuapp.com/
 
 ###
-GET  http://localhost:8080/plant/2
+GET  https://seed-and-feed-backend.herokuapp.com/plant/2
 
 ###
-GET  http://localhost:8080/plants?plantsIds=1,2,5,30,
+GET  https://seed-and-feed-backend.herokuapp.com/plants?plantsIds=1,2,5,30,

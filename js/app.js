@@ -83,7 +83,7 @@ console.log(fdate);
 const containerEl = document.querySelector(".container");
 function makeHomeView() {
   console.log("working");
-  fetch("http://localhost:8080/")
+  fetch("https://seed-and-feed-backend.herokuapp.com/")
     .then((res) => res.json())
     .then((plants) => {
       makeHomeViewFromJSON(plants);
@@ -150,7 +150,7 @@ if (!Array.isArray(array) || !array.length ) {
   alert("Please select at least one plant");
 }
 else {
-fetch("http://localhost:8080/plants?plantsIds="+queryString) 
+fetch("https://seed-and-feed-backend.herokuapp.com/plants?plantsIds="+queryString) 
 .then(res => res.json())
 .then(plants =>{
 selectedPlants = plants;
@@ -213,7 +213,7 @@ gardenButton.addEventListener('click',makeGardenResourcesView);
   
 function makeAllRecipesView(){
 recipeViewSelected = true;
-  fetch("http://localhost:8080/")
+  fetch("https://seed-and-feed-backend.herokuapp.com/")
   .then((res) => res.json())
   .then((plants) => {
       makeAllRecipesViewFromJson(plants);
